@@ -73,8 +73,8 @@ client.on("message", async (msg) => {
     if (!chat.isGroup) {
       const contact = await msg.getContact();
       await msg.reply(`Ola solo soy un bot
-        No me escribas en privato porque me muero
-        Dirijete con el administrador del grupo`);
+No me escribas en privato porque me muero
+Dirijete con el administrador del grupo`);
       //const flag = await contact.block();
     } else {
       await messageRouter(msg, client);
