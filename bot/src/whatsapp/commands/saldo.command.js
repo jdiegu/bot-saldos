@@ -27,10 +27,10 @@ exports.consultar = async (msg, args) => {
     const mentions = await msg.getMentions();
 
     if (!mentions.length) return msg.reply("Menciona usuario");
-    console.log(mentions[0]);
-    console.log(mentions[0].number);
-    console.log(mentions[0].id);
-    console.log(mentions[0].id.user);
+    //console.log(mentions[0]);
+    //console.log(mentions[0].number);
+    //console.log(mentions[0].id);
+    //console.log(mentions[0].id.user);
     const saldo = await BalanceService.getBalance(mentions[0].id.user);
 
     return msg.reply(`Saldo usuario: $${saldo.balance}`);
