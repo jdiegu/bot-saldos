@@ -5,7 +5,7 @@ const express = require('express');
 const messageRouter = require('./messageRouter');
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT_WEB || 4000;
 
 /*
  Guarda el QR como imagen base64
